@@ -1,0 +1,144 @@
+@import url('./partials/nav.css');
+@import url('./partials/footer.css');
+@import url('./partials/utility.css');
+@import url('./partials/section1.css');
+@import url('./partials/section2.css');
+
+/*Title Page CSS*/
+.header {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.bgImg {
+    background: url('../images/bottom.jpg');
+    background-size: cover;
+    filter: blur(4px);
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*Team Section*/
+.section2::before {
+    background: url('../images/middle.jpg');
+    background-size: cover;
+    z-index: -1;
+
+    filter: blur(4px);
+}
+
+.section2 h1 {
+    font-size: var(--head2);
+    font-family: var(--family1);
+
+    color: var(--white);
+}
+
+.section2 p {
+    font-size: var(--head3);
+    font-family: var(--family2);
+
+    color: var(--white);
+    padding-top: 10px;
+}
+
+.contentContainer {
+    color: var(--white);
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content {
+    background-color: var(--transparentBlack);
+    box-shadow: 0 0 5px 0 var(--white);
+
+    width: 40%;
+}
+
+.content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.content h3 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--family2);
+}
+
+.content p {
+    font-size: var(--head3);
+    font-weight: 400;
+    font-family: var(--family2);
+
+    padding: 0;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.content:hover {
+    box-shadow: 0 0 15px 0 var(--white);
+}
+
+.content .email{
+    font-size: 17.5px;
+    color: var(--gray);
+}
+.hide {
+    display: none;
+}
+
+.btn {
+    font-size: 50px;
+    color: var(--white);
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .section2 h1 {
+        font-size: 30px;
+    }
+
+    .section2 p{
+        font-size: 15px;
+    }
+
+    .contentContainer {
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .btn {
+        font-size: 25px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .content .email{
+        font-size: 12.5px;
+    }
+
+    .content img {
+        width: 100px;
+        height: 100px;
+    }
+}
