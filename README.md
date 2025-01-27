@@ -13,20 +13,22 @@ Before starting the below requirements, install python>=3.8.0 and pip from https
    git clone https://github.com/anvitgupta01/Summarix_with_streaming
    ```
 
-2. Install all the required packages by pip install command, as given in requirements.txt file. Alternatively, use the following command to install all the packages in the python environment:
+2. Install ollama from https://ollama.com/
+
+3. Install all the required packages by pip install command, as given in requirements.txt file. Alternatively, use the following command to install all the packages in the python environment:
 
    ```python
    pip install -r requirements.txt
    ```
    
-3. After installing all the packages, add a python file, named ***secretsEmail.py***, in the same directory as app.py, containing email and password of the sender, through with the email will be sent to the respective user on submission of the contact form. For example,
+4. After installing all the packages, add a python file, named ***secretsEmail.py***, in the same directory as app.py, containing email and password of the sender, through with the email will be sent to the respective user on submission of the contact form. For example,
 
    ```python
    password = "AG@123"
    email = "anvit_g@cs.iitr.ac.in"
    ```
    
-4. Finally, run the application by the following python command:
+5. Finally, run the application by the following python command:
 
    ```python
    python app.py
